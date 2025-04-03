@@ -100,17 +100,17 @@ body {
 
   .mobile-menu {
     position: absolute;
-    top: 45px;
-    left: 70%;
-    width: 30%;
+    top: 40px;
+    left: 0;
+    width: 100%;
     z-index: 100;
-    border-radius: 20px;
+    border-radius: 50px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background: #000000;
     text-align: center;
     padding: 10px 0;
-
+    padding-top: 30px;
   }
 
   
