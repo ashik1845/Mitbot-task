@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MyService.css"; // Ensure CSS file exists
+import "./Myservice.css"; // Ensure CSS file exists
 
 const MyService = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
