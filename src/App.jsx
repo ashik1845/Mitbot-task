@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./Navbar";
 import MyService from "./Myservice";
 import Experience from "./Experience";
 import Hire from "./Hire";
@@ -13,7 +13,7 @@ import Footer from "./Footer";
 function App() {
   return (
     <div style={{ margin: 0, padding: 0 }}>
-      <Nav />
+      <Nav/>
       <MyService/>
       <Experience/>
       <Hire/>
