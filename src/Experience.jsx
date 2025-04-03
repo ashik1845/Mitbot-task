@@ -1,5 +1,5 @@
 import React from 'react';
-import './experience.css'; // Make sure the CSS file is correctly linked
+import './Experience.css'; // Make sure the CSS file is correctly linked
 
 const Experience = () => {
   return (

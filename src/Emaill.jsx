@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./email.css";
+import "./Email.css";
 
 const EmailCTA = () => {
   const [email, setEmail] = useState("");
