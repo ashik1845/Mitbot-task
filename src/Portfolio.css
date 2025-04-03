@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/* Custom font for Lufga - you may need to replace this with the actual font import */
+@font-face {
+  font-family: "Lufga";
+  src: url("path-to-lufga-font.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("path-to-lufga-bold-font.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Main container */
+.portfolio-container {
+  display: flex;
+  padding: 97px 71px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Header section */
+.portfolio-header {
+  display: flex;
+  width: 100%;
+  max-width: 1298px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-container {
+  display: flex;
+  width: 643px;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-title {
+  font-family: Lufga, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  margin: 0;
+}
+
+.title-primary {
+  color: #344054;
+}
+
+.title-accent {
+  color: #fd853a;
+}
+
+.see-all-button {
+  color: #fff;
+  font-family: Lufga, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  padding: 20px 40px;
+  gap: 10px;
+  border-radius: 60px;
+  background-color: #fd853a;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.see-all-button:hover{
+    transform: scale(1.1);
+}
+
+/* Portfolio content */
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Carousel section */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.image-gallery {
+  display: flex;
+  width: 100%;
+  max-width: 1290px;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.portfolio-image {
+  width: 500px;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
+    margin: 15px;
+    background: rgba(8, 8, 8, 0.226);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .portfolio-image-wrapper:hover .image-description {
+    opacity: 1;
+  }
+
+.carousel-navigation {
+  display: flex;
+  align-items: center;
+  gap: 11.311px;
+}
+
+.nav-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 20.736px;
+  background-color: #e4e7ec;
+}
+
+.nav-dot.active {
+  width: 60px;
+  background-color: #fd853a;
+}
+
+/* Category filters */
+.category-filters {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 15px 32px;
+  gap: 10px;
+  border-radius: 24px;
+  background-color: #f2f4f7;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+
+.filter-button:hover{
+    transform: scale(1.1);
+    
+}
+
+/* Featured project section */
+.featured-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps items on one line */
+    gap: 10px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+  
+  .project-title {
+    color: #344054;
+    font-family: Lufga, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.72px;
+    flex-grow: 1; /* Allows title to shrink but not break */
+    min-width: 0; /* Ensures text shrinks properly */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .arrow-buttonnn {
+    flex-shrink: 0; /* Prevents shrinking */
+    width: 58px;
+    height: 58px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 2px solid #fd853a;
+    background-color: #fd853a;
+    cursor: pointer;
+    min-width: 58px; /* Ensures button does not collapse */
+  }
+  
+  /* Mobile Fix */
+
+  
+
+.arrow-icon {
+  flex: 1;
+  align-self: stretch;
+}
+
+.project-description {
+  color: #344054;
+  font-family: Lufga, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  width: 100%;
+  max-width: 742px;
+  text-align: center;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .arrow-buttonnn {
+         /* Prevents shrinking */
+        width: 40px;
+        height: 40px;
+        padding: 0.5px;
+        min-width: 40px; /* Ensures button does not collapse */
+      }
+  .portfolio-container {
+    padding: 60px 40px;
+  }
+
+  .portfolio-header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  .portfolio-title {
+    font-size: 48px;
+  }
+
+  .portfolio-content {
+    gap: 32px;
+  }
+
+  .carousel-container {
+    gap: 32px;
+  }
+
+  .image-gallery {
+    justify-content: center;
+  }
+
+  .category-filters {
+    justify-content: center;
+  }
+
+
+  .project-title {
+    font-size: 36px;
+  }
+
+  .featured-project {
+    gap: 20px;
+  }
+
+  .project-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-container {
+    padding: 30px 20px;
+  }
+
+  .project-header {
+    gap: 5px; /* Reduce gap on small screens */
+  }
+
+  .project-title {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .arrow-button {
+    width: 40px; /* Reduce button size */
+    height: 40px;
+    padding: 2px;
+    min-width: 40px;
+  }
+
+  .portfolio-title {
+    font-size: 36px;
+  }
+
+  .see-all-button {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+
+  .filter-button {
+    font-size: 16px;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
+}
+
+.portfolio-image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-arrow-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #fd853a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  
+  .image-arrow-icon path {
+    stroke: #fd853a;
+    transition: stroke 0.3s ease-in-out;
+  }
+  
+  .portfolio-image-wrapper:hover .image-arrow-button {
+    background-color: #fd853a;
+  }
+  
+  .portfolio-image-wrapper:hover .image-arrow-icon path {
+    stroke: #fff;
+  }
+  @media (max-width: 475px) {
+    .portfolio-container {
+      padding: 20px 15px; /* Reduce padding to fit smaller screens */
+    }
+  
+    .project-header {
+      flex-wrap: nowrap; /* Prevents title & button from wrapping */
+      gap: 5px;
+    }
+  
+    .project-title {
+      font-size: 22px; /* Reduce font size for better fit */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  
+    .arrow-button {
+      width: 35px; /* Adjust button size */
+      height: 35px;
+      padding: 0.5px;
+      min-width: 35px;
+    }
+  
+    .portfolio-title {
+      font-size: 30px; /* Smaller title */
+      text-align: center; /* Centers title */
+    }
+  
+    .see-all-button {
+      font-size: 14px;
+      padding: 12px 25px;
+    }
+  
+    .filter-button {
+      font-size: 14px;
+    }
+  
+    .project-description {
+      font-size: 14px;
+    }
+  
+    .portfolio-image-wrapper {
+      width: 100%; /* Ensure images fit within the screen */
+      max-width: 100%;
+    }
+  
+    .image-arrow-button {
+      width: 35px; /* Adjust button size */
+      height: 35px;
+      top: 5px; /* Adjust position */
+      right: 5px;
+    }
+  
+    /* Ensure the entire portfolio section fits properly */
+    .portfolio-section {
+      overflow-x: hidden;
+    }
+  }
+  

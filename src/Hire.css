@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Lufga, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  .hire-section {
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 50px;
+    background-color: #f2f4f7;
+    display: flex;
+    padding: 103px 70px 103px 71px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 991px) {
+    .hire-section {
+      padding: 100px 20px;
+    }
+  }
+  
+  .content-container {
+    display: flex;
+    min-height: 600px;
+    max-width: 100%;
+    width: 1299px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .profile-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 603px;
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+  }
+
+  .profile-image {
+    aspect-ratio: 1.01;
+    object-fit: contain;
+    object-position: center;
+    width: 603px;
+    align-self: stretch;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Background glow effect */
+  .profile-image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(253, 133, 58, 0.4) 0%, rgba(253, 133, 58, 0) 80%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* Hover effect */
+  .profile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .profile-image:hover::before {
+    opacity: 1;
+  }
+  
+  
+  @media (max-width: 991px) {
+    .profile-image {
+      max-width: 100%;
+    }
+  }
+  
+  .text-content {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  @media (max-width: 991px) {
+    .text-content {
+      max-width: 100%;
+    }
+  }
+  
+  .section-heading {
+    width: 100%;
+    font-size: 64px;
+    color: #344054;
+    font-weight: 600;
+    letter-spacing: -0.96px;
+    line-height: 1;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .highlight {
+    color: rgba(253, 133, 58, 1);
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 991px) {
+    .section-heading {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .description {
+    color: #98a2b3;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    margin-top: 47px;
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .description {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .stats-container {
+    display: flex;
+    margin-top: 47px;
+    width: 100%;
+    align-items: start;
+    gap: 10px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 991px) {
+    .stats-container {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .stat-block {
+    min-width: 240px;
+    flex: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  
+  .stat-number {
+    color: #1d2939;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -0.54px;
+    margin: 0;
+  }
+  
+  .stat-label {
+    color: #667085;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .hire-buttonn {
+    align-self: start;
+    border-radius: 32px;
+    border: 1px solid rgba(21, 21, 21, 1);
+    margin-top: 47px;
+    padding: 33px 59px;
+    font-size: 32px;
+    color: rgba(21, 21, 21, 1);
+    font-weight: 600;
+    letter-spacing: -0.48px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  .hire-buttonn:hover {
+    background-color: rgba(21, 21, 21, 1);
+    color: #f2f4f7;
+  }
+  
+  @media (max-width: 991px) {
+    .hire-button {
+      padding: 33px 20px;
+      margin-top: 40px;
+    }
+  }
+  

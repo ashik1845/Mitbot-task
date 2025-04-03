@@ -1,0 +1,100 @@
+/* Main banner container */
+.banner {
+    display: flex;
+    width: 100%;
+    height: 147px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 24px 0px;
+    background-color: #fb6514;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Rotated white strip */
+  .banner-strip {
+    position: absolute;
+    width: 100%;
+    height: 63px;
+    background-color: #ffffff;
+    transform: rotate(-2.5deg);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  /* Marquee effect */
+  .marquee {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .marquee .category-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    animation: marquee 7s linear infinite;
+  }
+  
+  /* Keyframes for marquee effect */
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Text styling */
+  .category-text {
+    color: #000000;
+    font-size: 48px;
+    font-family: "Lufga", sans-serif;
+    letter-spacing: -0.015em;
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  /* Star icon container */
+  .star-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Ensure SVG is visible */
+  .star-icon svg {
+    display: block;
+    width: 34px;
+    height: 34px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .category-text {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      height: 120px;
+    }
+    .category-text {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      height: 100px;
+    }
+    .category-text {
+      font-size: 20px;
+    }
+  }
+  

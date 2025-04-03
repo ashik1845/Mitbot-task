@@ -1,0 +1,268 @@
+/* Font imports */
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lufga:wght@400;500;600&display=swap");
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Lufga",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+}
+
+/* Work Experience Container */
+.work-experience-container {
+  padding-left: 71px;
+  padding-right: 71px;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+/* Experience Header */
+.experiencee-header {
+  width: 100%;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.experience-title {
+  font-family:
+    "Vast Shadow",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-size: 64px;
+  color: #344054;
+  font-weight: 400;
+  letter-spacing: -0.96px;
+  line-height: 1;
+}
+
+.title-primary {
+  font-family:
+    "Lufga",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 500;
+}
+
+.title-accent {
+  font-family:
+    "Lufga",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 500;
+  color: rgba(253, 133, 58, 1);
+}
+
+/* Experience Content Layout */
+.experience-content {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 40px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Companies Column */
+.companies-column {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family:
+    "Lufga",
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  line-height: 1;
+}
+
+.company-item {
+  margin-bottom: 102px;
+}
+
+.company-item:last-child {
+  margin-bottom: 0;
+}
+
+.company-name {
+  color: #344054;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+
+.company-period {
+  display: block;
+  color: #98a2b3;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.36px;
+  margin-top: 14px;
+}
+
+/* Timeline Column */
+.timeline-columnn {
+  position: relative;
+  display: flex;
+  min-height: 400px;
+  align-items: stretch;
+  gap: 10px;
+  width: 48px;
+}
+
+.timeline-line {
+  border-color: rgba(52, 64, 84, 1);
+  border-style: dashed;
+  border-width: 3px;
+  background-color: #344054;
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 394px;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.timeline-markers {
+  z-index: 1;
+  width: 48px;
+}
+
+.timeline-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  border: 2px dashed #1d2939;
+  background-color: #fff;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.timeline-marker:nth-child(2) {
+  margin-top: 128px;
+}
+
+.timeline-marker:nth-child(3) {
+  margin-top: 128px;
+}
+
+.marker-dot {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.marker-orange {
+  background-color: #fd853a;
+}
+
+.marker-dark {
+  background-color: #1d2939;
+}
+
+/* Roles Column */
+.roles-column {
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  width: 444px;
+}
+
+.role-item {
+  max-width: 100%;
+  width: 444px;
+  margin-bottom: 48px;
+}
+
+.role-item:last-child {
+  margin-bottom: 0;
+}
+
+.role-title {
+  color: #344054;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.6px;
+}
+
+.role-description {
+  color: #98a2b3;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-top: 14px;
+}
+@media (max-width: 1350px) {
+    .timeline-columnn {
+        display: none; /* Hide timeline markers for mobile view */
+      }
+}
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .work-experience-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .experience-title {
+    max-width: 100%;
+    font-size: 40px;
+
+  }
+
+  .experience-content {
+    max-width: 100%;
+  }
+
+  .companies-column {
+    max-width: 100%;
+  }
+
+  .company-item {
+    margin-bottom: 40px;
+  }
+
+  .company-name {
+    max-width: 100%;
+  }
+
+
+  .timeline-marker:nth-child(2),
+  .timeline-marker:nth-child(3) {
+    margin-top: 40px;
+  }
+
+  .roles-column {
+    max-width: 100%;
+  }
+
+  .role-item {
+    margin-bottom: 40px;
+  }
+
+  .role-description {
+    max-width: 100%;
+  }
+}

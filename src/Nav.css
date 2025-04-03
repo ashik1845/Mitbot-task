@@ -1,0 +1,388 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lufga", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(7.5px);
+  background-color: #000000;
+  position: relative;
+  z-index: 1110;
+}
+
+.nav-item {
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 1100;
+}
+
+.nav-item:hover {
+  background-color: #fd853a;
+  border-radius: 50px;
+  transition: all ease 0.3s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.logoo {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+
+/* Hamburger Menu */
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .main-nav {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .logoo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+  
+
+  .nav-item {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    color: white;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 45px;
+    left: 70%;
+    width: 30%;
+    z-index: 100;
+    border-radius: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #000000;
+    text-align: center;
+    padding: 10px 0;
+
+  }
+
+  
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding: 10px;
+  }
+}
+
+
+
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+/* Intro Section (Centered) */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.greeting-badge {
+  padding: 10px 20px;
+  border-radius: 21.8px;
+  font-size: 20px;
+  border: 1px solid #171717;
+  color: #171717;
+  background-color: #fff;
+}
+
+.intro-heading {
+  font-family: "Urbanist", sans-serif;
+  font-size: 75px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 0;
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: inline-block; /* Ensures the heading stays as a single block */
+}
+
+.highlightt {
+  color: #fd853a;
+  z-index: 0;
+}
+.subheading {
+  font-size: 75px; /* Adjust the size for Product Designer */
+  font-weight: 600;
+  z-index: 0;
+}
+
+@media (max-width: 1000px) {
+  .intro-heading{
+    font-size: 60px;
+  }
+  .subheading{
+    font-size: 60px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .intro-heading{
+    font-size: 42px;
+  }
+  .subheading{
+    font-size: 42px;
+  }
+}
+
+/* Testimonial (Left Side) */
+.testimoniall {
+  max-width: 400px;
+  position: absolute;
+  left: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.quote-iconn {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.testimonial-textt {
+  color: #344054;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Experience (Right Side) */
+.rating-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  width: 32px;
+  height: 32px;
+}
+
+.experience {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.experience-years {
+  color: #171717;
+  font-family: "Urbanist", sans-serif;
+  font-size: 47px;
+  font-weight: 700;
+}
+
+.experience-text {
+  color: #171717;
+  font-size: 20px;
+}
+
+@media (max-width: 700px){
+  
+  .testimoniall {
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 70%;
+  }
+}
+
+@media (max-width: 375px){
+  
+  .testimoniall {
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 75%;
+  }
+
+  .quote-iconn {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .testimonial-textt {
+    font-size: 15px;
+  }
+
+  .intro-heading{
+    font-size: 30px;
+  }
+  .subheading{
+    font-size: 30px;
+  }
+
+  .greeting-badge {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .experience-years {
+    font-size: 19px;
+  }
+  
+  .experience-text {
+    font-size: 12px;
+  }
+
+  .star {
+    width: 15px;
+    height: 15px;
+  }
+
+  .rating-experience {
+    bottom: 62%;
+    transform: translateY(50%);
+  }
+  .main-nav {
+    padding: 2px 5px;
+  }
+
+}
+
+/* Image Section (Centered) */
+.image-section {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hero Image (At Bottom) */
+.hero-image {
+  width: 652px;
+  height: 536px;
+  bottom: -55px;
+  object-fit: cover;
+  position: relative;
+}
+
+/* Background Shape (Centered at Bottom) */
+.bg-shape {
+  position: absolute;
+  bottom: -50px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px; /* Adjust size */
+  height: 400px;
+  z-index: -1; /* Behind other elements */
+}
+
+/* CTA Buttons (Centered) */
+.cta-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(7.5px);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-btn {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.portfolio-btn:hover{
+  background-color: #fd853a;
+  border-radius: 50px;
+  transition: all ease 0.3s;
+}
+
+
+
+/* Media Queries */
+
+
+.testimoniall, .rating-experience, .intro-heading {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}

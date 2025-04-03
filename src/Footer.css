@@ -1,0 +1,279 @@
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px 71px;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #272727;
+    font-family: Lufga, sans-serif;
+    min-height: 100vh; /* Ensures full screen coverage */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.connect-heading {
+    max-width: 600px;
+    color: #fcfcfd;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+    margin: 0;
+}
+
+.hire-button {
+    margin-top: 10px;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #fd853a;
+    cursor: pointer;
+    border: none;
+    transition: all ease-in 0.3s;
+}
+
+.hire-button:hover{
+    transform: scale(1.1);
+}
+
+.hire-text {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.arrow-icon {
+    width: 42px;
+    height: 42px;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #475467;
+    border: none;
+    margin: 30px 0;
+}
+
+/* Content Section */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+/* Company Info */
+.company-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+}
+
+.company-description {
+    max-width: 600px;
+    color: #fcfcfd;
+    font-size: 18px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Navigation */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 200px;
+}
+
+.footer-heading {
+    color: #fd853a;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.nav-linkss {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    
+}
+
+.nav-linkk {
+    color: #fcfcfd;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all ease-in 0.3s;
+}
+
+.nav-linkk:hover{
+    background-color: #fd853a;
+    border-radius: 50px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item {
+    color: #fcfcfd;
+    font-size: 16px;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.input-container {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 14px 0px 0px 14px;
+    background-color: #fff;
+}
+
+.email-input {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.submit-button {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd853a;
+    border-radius: 0px 14px 14px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.copyright, .terms {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .connect-heading {
+        font-size: 48px;
+        width: 100%;
+    }
+
+    
+
+    .hire-text {
+        font-size: 22px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 15px;
+    }
+
+    .connect-heading {
+        font-size: 36px;
+    }
+
+    .hire-text {
+        font-size: 20px;
+    }
+
+    .company-description {
+        font-size: 16px;
+    }
+
+    .copyright, .terms {
+        font-size: 16px;
+        text-align: center;
+    }
+}
