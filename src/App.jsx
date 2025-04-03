@@ -5,7 +5,7 @@ import Experience from "./Experience";
 import Hire from "./Hire";
 import Portfolio from "./Portfolio";
 import Testimonials from "./Testimonials";
-import EmailCTA from "./email";
+import EmailCTA from "./Emaill";
 import Effect from "./Effect";
 import Footer from "./Footer";
 
